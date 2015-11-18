@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>cooladata</groupId>
+    <artifactId>dal</artifactId>
+    <version>4.2.2-SNAPSHOT</version>
+  </parent>
+  <artifactId>dal.model</artifactId>
+  
+    <dependencies>
+	  	<dependency>
+				<groupId>cooladata</groupId>
+				<artifactId>dal.base</artifactId>
+	  	</dependency>
+			<dependency>
+	            <groupId>org.springframework.boot</groupId>
+	            <artifactId>spring-boot-starter-data-jpa</artifactId>
+     		 </dependency>
+       	 <dependency>
+	            <groupId>com.h2database</groupId>
+	            <artifactId>h2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+        </dependency>
+        <dependency>
+	            <groupId>com.google.guava</groupId>
+	            <artifactId>guava</artifactId>
+      	</dependency>
+  </dependencies>
+  
+</project>

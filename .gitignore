@@ -1,0 +1,63 @@
+.settings
+# Created by http://www.gitignore.io
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+
+### Java ###
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+.settings/org.eclipse.core.resources.prefs
+.project
+.metadata
+.metadata/*
+.metadata/*.*
+
+dal.controller/src/main/resources/application_dev.properties
+/logs/dal*.log
+.metadata/*
+.metadata
+.metadata/
+/.metadata
+
+
+.metadata/*.*
+*.classpath
+*.iml
+*.ipr
+*.iws
+*.idea
