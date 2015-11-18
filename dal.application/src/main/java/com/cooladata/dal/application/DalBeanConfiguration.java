@@ -39,40 +39,39 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 public class DalBeanConfiguration {
 	
 	private final static Logger logger = LoggerFactory.getLogger(DalBeanConfiguration.class);
-	
 
-	
+
+
 	public static Environment env;
 	public static PROFILE profile ;
 	public static String DAL_HOME;
 	
 	@Autowired
 	SessionFactory sessionFactory;
-	
-	
-	@Configuration
-	@PropertySources({	@PropertySource("classpath:application_dev.properties"),
-						@PropertySource("classpath:data.properties")})
+
+
+
+	@PropertySources({@PropertySource("classpath:application_dev.properties")})
 	public static class Local
 	{
 		@Autowired
 		private Environment env;
-		
+
 //	    @Autowired
 //	    EmbeddedWebApplicationContext server;
-		
+
 		@Bean(name="setEnv")
 		public String aaa()
 		{
 			DalBeanConfiguration.profile = PROFILE.DEV;
 			DalBeanConfiguration.env = env;
-			
+
 			return "aaa";
 		}
 	}
-	
 
-		
+
+
     @Bean
     public ViewResolver getViewResolver(){
     	
